@@ -1,8 +1,7 @@
-
-
-// components/Camera.js
 import { useState } from 'react';
 import PropTypes from 'prop-types';
+import { FaTrashAlt } from 'react-icons/fa';
+
 
 const Camera = ({ onScore, onSubmission }) => {
   const [image, setImage] = useState(null);
@@ -31,6 +30,8 @@ const Camera = ({ onScore, onSubmission }) => {
 
   return (
     <div>
+            <FaTrashAlt className="waste-bin" />
+
       <input type="file" accept="image/*" onChange={handleImageChange} />
       <select value={disposalType} onChange={handleDisposalChange}>
         <option value={1}>Trash Bin</option>

@@ -1,4 +1,3 @@
-// components/Leaderboard.js
 
 import PropTypes from 'prop-types';
 
